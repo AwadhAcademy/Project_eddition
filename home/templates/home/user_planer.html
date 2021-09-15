@@ -1,0 +1,23 @@
+{% extends "../home/basic.html" %} 
+{% block title %}  Create Palns {% endblock title %} 
+
+{% block alert_s %}
+<div class="alert alert-info alert-dismissible fade show" role="alert">
+    <strong>Welcome </strong> Your are now registred with Apna Carrer
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div> {% endblock alert_s %} 
+
+{% block User_Name_Loogout_details %}
+<a  href="#" class="upper_nav_items loogout_button">Loogout  |{{name}} <strong>{{params}}</strong></a> {% endblock User_Name_Loogout_details %} 
+
+{% block body %}
+
+
+
+
+
+
+{% for message in messages %}
+    <h2>{{message}}</h2>
+{% endfor%}
+ {% endblock body %}

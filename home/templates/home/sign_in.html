@@ -1,0 +1,63 @@
+{% extends "../home/basic.html" %} {% block title %} Signin{% endblock title %} {% block body %}
+
+<div class="sign_in_form_data  container">
+    <div class="upper_form_data">
+        <h2>APNA CARRER <br> <strong>Signin page</strong></h2>
+
+    </div>
+    <!-- ////// main form ////////////////// -->
+
+    <form class="row g-3 form" method="POST" action="{%url 'sign_in'%}">
+        {% csrf_token %}
+        <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Name" id="name" name="name">
+        </div>
+
+        <div class="col-md-6">
+            <label for="last_name" class="form-label">Last Name</label>
+            <input type="text" class="form-control" placeholder="last name" id="last_name" name="last_name">
+        </div>
+
+        <div class="col-md-6">
+            <label for="email" class="form-label">email</label>
+            <input type="email" class="form-control" placeholder="last name" id="email" name="email" required>
+        </div>
+
+        <div class="col-md-6">
+            <label for="password1" class="form-label">password</label> `
+            <input type="password" class="form-control" id="password1" name="password1" placeholder="use numeric password only">
+        </div>
+
+        <div class="col-md-6">
+            <label for="password2" class="form-label">re_password</label> `
+            <input type="password" class="form-control" id="password2" name="password2" placeholder="use numeric password only">
+        </div>
+
+
+        <div class="col-md-6">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" id="phone" placeholder="Phone" name="phone">
+        </div>
+
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+<div>
+
+</div>
+{% for i in message %}
+<div>i</div>
+{% endfor%}
+
+{% endblock body %}

@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+.upper_nav_bac {
+    /* border: 2px solid; */
+    height: 80vh;
+    background: url(../photos/upper_nav_back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.upper_nav {
+    /* border: 2px solid red; */
+    height: 19vh;
+    background: #69625eba;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.upper_nav_items {
+    /* border: 1px solid black; */
+    padding: 1%;
+    width: 11%;
+    text-align-last: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: system-ui;
+    color: white;
+}
+
+.upper_nav img {
+    width: 6%;
+    position: relative;
+    /* left: -8vw; */
+}
+
+.slider {
+    width: 100vw;
+    height: 5vh;
+    background: black;
+    color: white;
+    color: #8b654d;
+    font-weight: bolder;
+}
+
+.upper_nav_thought {
+    width: 49vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #650505;
+    top: 22%;
+}
+
+.lower_nav {
+    height: 30vh;
+    border: 2px solid;
+    background: #353132;
+    display: flex;
+    justify-content: center;
+}
+
+.upper_nav_bac h1 {
+    color: white;
+    font-family: inherit;
+    font-size: 3rem;
+    color: black;
+}
+
+.lower_nav_items {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid; */
+    width: 50vw;
+}
+
+.lower_nav a img {
+    width: 32%;
+    display: flex;
+    align-items: center;
+}
+
+.lower_nav a img:hover {
+    -webkit-filter: grayscale(1) invert(1);
+}
+
+.lower_nav_items a {
+    color: white;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.lower_nav_items a:hover {
+    color: #0cc15d;
+}
+
+
+/* ////////////////////////    Home .html  ////////////////// */
+
+.home_page {
+    /* border: 2px solid; */
+    height: 88vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.home_1 {
+    width: 50vw;
+    /* border: 2px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home_2 {
+    width: 36vw;
+    /* border: 2px solid; */
+    background: url("../photos/side_pannel.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form-signin {
+    width: 82%;
+    text-align-last: center;
+}
+
+
+/* //////////////////////////  about_us ///////////////// */
+
+.about {
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 86vh;
+}
+
+.pic_crousal {
+    /* border: 2px solid red; */
+    width: 34vw;
+    margin: 0% 7%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-self: center
+}
+
+.about_info {
+    /* border: 2px solid green; */
+    width: 47vw;
+    color: red;
+    text-align: center;
+    overflow: scroll;
+    height: 92%;
+    margin-top: 3%;
+    background: url(../photos/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.education {
+    background: #e6deef66;
+    ;
+}
+
+.about_info h4 {
+    color: #7e5a4e;
+    font-family: fantasy;
+    font-size: 3rem;
+}
+
+.about_info h5 {
+    color: chocolate;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.about_info strong {
+    color: #4e3d24;
+}
+
+.about_info p {
+    color: darkcyan;
+}
+
+.w-1000 {
+    width: 72%;
+}
+
+
+/* //////////////////////////// SIGNIN  //////////////////// */
+
+.sign_in_form_data {
+    /* border: 2px solid red; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50% !important;
+}
+
+.upper_form_data {}
+
+.upper_form_data h2 {
+    font-family: fantasy;
+    color: rebeccapurple;
+    text-align: center;
+}
+
+.upper_form_data h2 strong {
+    font-weight: bolder;
+    font-family: system-ui;
+    font-size: 1.05rem;
+    text-align: center;
+    color: black;
+}
+
+.form {
+    margin-top: 6% !important;
+    width: 100%;
+    /* align-items: center; */
+    /* justify-content: center; */
+    display: flex !important;
+}
+
+
+/* ///////////////////////////////   user_pannel /////////////////// */
+
+.loogout_button {
+    font-size: 0.9rem;
+    border: 2px solid;
+    width: 14vw;
+    background: #888380;
+}
+
+.loogout_button:hover {
+    background: #ffffff9e;
+    color: black;
+}
+
+
+/* ////////////////////  PROJECTS DATA //////////////////// */
+
+.project_box {
+    /* border: 2px solid red; */
+    width: 23vw;
+    height: 52vh;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 7px 6px #1010102e;
+    margin: 3% 1%;
+}
+
+.project_title {
+    /* border: 1px solid black; */
+    height: 10%;
+    margin-top: 2%;
+    padding: 0% 3%;
+    width: 96%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: cursive;
+    color: #9e2b8b;
+}
+
+.project_images {
+    /* border: 1px solid green; */
+    height: 42%;
+    width: 85%;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_desc {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 17vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.main_project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

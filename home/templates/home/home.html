@@ -1,0 +1,40 @@
+{% extends "home/basic.html" %} {% load static%} {% block heading_style_home %} style="color:red;text-decoration: underline;" {% endblock heading_style_home %} {% block title %} HOME {% endblock title %} {% block body %}
+<div class="container home_page">
+    <div class="home_1">
+        <main class="form-signin">
+            <form method="POST" action="{%url 'home'%}">
+                {% csrf_token %}
+                <img class="mb-4" src="{% static 'home/photos/logo.png'%}" alt="" width="72" height="57">
+                <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+                <div class="form-floating">
+                    <label name="name" for="floatingInput">Username</label>
+                    <input name="name" type="text" class="form-control" id="floatingInput" placeholder="User Name">
+                </div>
+                <div class="form-floating">
+                    <label name="password" for="floatingPassword">Password</label>
+                    <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                </div>
+
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                <br>
+                <!-- <button type="button" class="btn btn-secondary">Create New Account</button> -->
+                <p class="mt-5 mb-3 text-muted">&copy; 2020–2021</p>
+            </form>
+        </main>
+        <a href="{% url 'sign_in' %}"> <button style="margin-top: 2%;" class="w-100 btn btn-lg btn-secondary">Create New
+                Account</button></a>
+
+    </div>
+    <div class="home_2">
+
+    </div>
+
+</div>
+
+{% endblock body %}

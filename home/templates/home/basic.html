@@ -1,0 +1,57 @@
+{% load static%}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Apna Carrer |{% block title %} {% endblock title %}</title>
+</head>
+
+<body>
+    {% block alert_s %}
+    
+    {% endblock alert_s %}
+    <div class="upper_nav_bac">
+        <div class="upper_nav">
+            <img src="{% static 'home/photos/logo.png'%}" alt="">
+            <a {% block heading_style_home %} {% endblock heading_style_home %} href="{%url 'home'%}" class="upper_nav_items">Home</a>
+            <a {% block heading_style_about %} {% endblock heading_style_about %} href="{% url 'about'%}" class="upper_nav_items">About Us</a>
+            <a {% block heading_style_contact_us %} {% endblock heading_style_contact_us %} href="#" class="upper_nav_items">Contact Us</a>
+            <a {% block heading_style_chatbot %} {% endblock heading_style_chatbot %} href="#" class="upper_nav_items">Chat_Bot</a>
+            <a {% block heading_style_projects %} {% endblock heading_style_projects %} href="{% url 'project'%}" class="upper_nav_items">Projects</a>
+            {% block User_Name_Loogout_details %}
+            {% endblock User_Name_Loogout_details %}
+        </div>
+        <h1 class="upper_nav_thought">APNA CARRER</h1>
+        <div class="upper_nav_thought">
+            Put Your carrer In Right Direction.... <br> Belive In Your Self
+        </div>
+    </div>
+
+    <marquee direction="right" height="100" width="100" class="slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quo natus repellendus temporibus quos ducimus.</marquee>
+    {% block body %} {% endblock body %}
+    <div class="lower_nav">
+        <div class="lower_nav_items">
+            <a target="blank" href="https://instagram.com/ayushgupta385?utm_medium=copy_link"><img src="{% static 'home/photos/instagram.png' %}" alt="social handel">Instagram</a>
+            <a target="blank" href="https://www.facebook.com/profile.php?id=100013180389191"><img src="{% static 'home/photos/facebook.png' %}" alt="social handel">Facebook</a>
+            <a target="blank" href="mywa.link/1itutmpo"><img src="{% static 'home/photos/whatsapp.png' %}" alt="social handel">Whatsapp</a>
+            <a target="blank" href="https://www.codechef.com/users/ayush_gupta_19"><img src="{% static 'home/photos/codechef.png' %}" alt="social handel">CodeChef</a>
+            <a target="blank" href="https://www.linkedin.com/in/ayush-gupts-50b023194/"><img src="{% static 'home/photos/linkedin.png' %}" alt="social handel">LinkedIn</a>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
